@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://c8owqnwdmcns7"]
+
+[ext_resource type="Shader" uid="uid://bsh23osh0vfsb" path="res://Shaders/box_blur.gdshader" id="1_nxogm"]
+[ext_resource type="Texture2D" uid="uid://dek6alhldmfua" path="res://650768.jpg" id="2_3253y"]
+[ext_resource type="Texture2D" uid="uid://d7o3sr7eyx78" path="res://icon.svg" id="3_3253y"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_u3cyc"]
+shader = ExtResource("1_nxogm")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_m7jmp"]
+shader = ExtResource("1_nxogm")
+
+[node name="Node2D" type="Node2D" unique_id=1051777531]
+
+[node name="650768" type="Sprite2D" parent="." unique_id=1796409956]
+material = SubResource("ShaderMaterial_u3cyc")
+position = Vector2(579, 316)
+scale = Vector2(0.5932291, 0.5932292)
+texture = ExtResource("2_3253y")
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=1364691377]
+material = SubResource("ShaderMaterial_m7jmp")
+position = Vector2(313, 215)
+texture = ExtResource("3_3253y")
